@@ -1,0 +1,41 @@
+.dropdown-item {
+    color: black;
+}
+
+footer,
+.bg-dark,
+#filas3 tr td>*,
+#filas4 tr td>*,
+#filas3 tr>*,
+#filas4 tr>* {
+    color: white;
+}
+
+th,
+#navbarScrollingDropdown,
+#blanco {
+    color: white;
+    text-shadow: 2px, 2px, 2px black !important;
+}
+
+td,
+#filas tr td>*,
+#filas2 tr td>*,
+.azul {
+    color: white !important;
+    background-color: rgb(23, 61, 132) !important;
+}
+
+.active {
+    text-decoration: underline;
+
+}
+
+select>* {
+    background-color: rgb(23, 61, 132);
+
+}
+
+th {
+    width: 12vw;
+}

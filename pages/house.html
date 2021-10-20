@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>House</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <header class="container-fluid p-0">
+            <div>
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                    <img src="../assets/logo2.png" alt="congreso" width="120" height="120">
+                    <div>
+                        <img src="../assets/mail.png" alt="sobre" width="40" />
+                        <a href="mail.to"> info@tgif.net</a>
+                    </div>
+                </div>
+                </nav>
+            </div>
+            <nav class="navbar navbar-expand bg-dark container-fluid mt-3">
+                <div class="container-fluid ">
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a id="blanco" class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Congress
+                                    113th</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="./house.html">House</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./senate.html">Senate</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Attendance</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="./houseAttendance.html">House</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./senateAttendance.html">Senate</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Party Loyalty</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="./houseParty.html">House</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./senateParty.html">Senate</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid d-flex align-items-center  mt-4">
+                <div class="ms-2">
+                    <h2 class="fst-italic text-start">Congressmen</h2>
+                    <p class="fw-light text-start">The major power of the House is to pass federal legislation that
+                        affects
+                        the entire
+                        country, although its bills must also be passed by the Senate and further agreed to by the U.S.
+                        President before becoming law (unless both the House and Senate re-pass the legislation with a
+                        two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate
+                        revenue
+                        bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to
+                        elect
+                        the
+                        U.S. President in case there is no majority in the Electoral College.
+                        Each U.S. state is represented in the House in proportion to its population as measured in the
+                        census,
+                        but every state is entitled to at least one representative.
+                    </p>
+                </div>
+                <div>
+                    <img src="../assets/voto.png" alt="imagen-voto" width="180">
+                </div>
+            </div>
+            <div class="container d-flex justify-content-evenly align-items-center mt-5">
+                <div>
+                    <select class="btn  dropdown-toggle align-self-center azul" id="select"
+                        aria-label="Default select example">
+                        <option selected value="todos">
+                            All States
+                        </option>
+                    </select>
+                </div>
+                <div class="d-flex">
+                    <div class="form-check btn btn-info p-1 m-1 azul">
+                        <label for="Democrats">Democrats</label>
+                        <input type="checkbox" value="D" id="D" checked>
+                    </div>
+                    <div class="form-check btn btn-info p-1 m-1 azul">
+                        <label for="Republicans">Republicans</label>
+                        <input type="checkbox" value="R" id="R" checked>
+                    </div>
+                    <div class="form-check btn btn-info p-1 m-1 azul">
+                        <label for="Independents">Independents</label>
+                        <input type="checkbox" value="I" id="I" checked>
+                    </div>
+                </div>
+            </div>
+            <table class="col-10 text-center container-fluid mt-3">
+                <thead class="bg-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Party</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Years in Office</th>
+                        <th scope="col">Votes w/ Party</th>
+                    </tr>
+                </thead>
+                <tbody id="filas">
+                </tbody>
+            </table>
+        </main>
+        <footer class=" d-flex justify-content-center align-items-center bg-dark mt-2">
+            <div class=" d-flex align-items-center justify-content-center">
+                <p class="fw-light">© 2016 TGIF | All Rights Reserved </p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
